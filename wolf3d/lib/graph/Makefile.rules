@@ -1,0 +1,2 @@
+NAME	=	libgraph-64.a
+LDLIBS	=	-lmy-64 -lx-64 -lmlx-64

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+arch=`uname -m`
+
+if [ ${arch} == 'x86_64' ]; then
+    echo "NAME	=	libgraph-64.a" > Makefile.rules
+    echo "LDLIBS	=	-lmy-64 -lx-64 -lmlx-64" >> Makefile.rules
+else
+    echo "NAME	=	libgraph.a" > Makefile.rules
+    echo "LDLIBS	=	-lmy -lx -lmlx" >> Makefile.rules
+fi

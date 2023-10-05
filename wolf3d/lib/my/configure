@@ -1,0 +1,19 @@
+#!/bin/bash
+## configure<3> for  in /home/laplan_m/Src/Epitech/Projets/C/my_ls
+##
+## Made by melvin laplanche
+## Login   <laplan_m@epitech.net>
+##
+## Started on  Thu Dec 16 17:54:11 2010 melvin laplanche
+## Last update Sun Dec 19 15:34:30 2010 melvin laplanche
+##
+
+arch=`uname -m`
+
+if [ ${arch} == "x86_64" ]; then
+   echo "NAME	=	libmy-64.a" > Makefile.rules
+   echo "LDLIBS	=	-lx-64" >> Makefile.rules
+else
+   echo "NAME	=	libmy.a" > Makefile.rules
+   echo "LDLIBS	=	-lx" >> Makefile.rules
+fi

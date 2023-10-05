@@ -1,0 +1,19 @@
+#!/bin/bash
+## configure for  in /home/laplan_m/Src/Epitech/Projets/C/wolf3d
+##
+## Made by melvin laplanche
+## Login   <laplan_m@epitech.net>
+##
+## Started on  Sun Dec 26 16:04:03 2010 melvin laplanche
+## Last update Sun Dec 26 17:27:13 2010 melvin laplanche
+##
+
+arch=`uname -m`
+
+if [ ${arch} == "x86_64" ]; then
+   echo "EXEC	=	wolf3d-64" > Makefile.rules
+   echo "LDLIBS	=	-lgraph-64 -lmy-64 -lx-64 -lmlx-64" >> Makefile.rules
+else
+   echo "EXEC	=	wolf3d" > Makefile.rules
+   echo "LDLIBS	=	-lgraph -lmy -lx -lmlx" >> Makefile.rules
+fi

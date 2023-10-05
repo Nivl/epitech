@@ -1,0 +1,2 @@
+NAME	=	libmy-64.a
+LDLIBS	=	-lx-64

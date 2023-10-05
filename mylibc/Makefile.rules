@@ -1,0 +1,2 @@
+NAME	=	libmy.a
+LDLIBS	=	-lx

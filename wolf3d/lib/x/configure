@@ -1,0 +1,17 @@
+#!/bin/bash
+## configure<2> for  in /home/laplan_m/Src/Epitech/Projets/C/my_ls
+##
+## Made by melvin laplanche
+## Login   <laplan_m@epitech.net>
+##
+## Started on  Thu Dec 16 17:53:55 2010 melvin laplanche
+## Last update Sun Dec 19 15:31:09 2010 melvin laplanche
+##
+
+arch=`uname -m`
+
+if [ ${arch} == "x86_64" ]; then
+   echo "NAME	=	libx-64.a" > Makefile.rules
+else
+   echo "NAME	=	libx.a" > Makefile.rules
+fi
